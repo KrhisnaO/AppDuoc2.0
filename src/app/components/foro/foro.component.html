@@ -1,0 +1,64 @@
+<ion-content class="background" [fullscreen]="true">
+  
+  <!--CREAR PUBLICACION-->
+  <div style=" display: flex; align-items: center; justify-content:center;">
+  <ion-card class="colorcard1 ion-text-center ion-padding-vertical">
+    
+    <ion-card-header>
+      <ion-card-title class="azul">Ingresa tu publicación</ion-card-title>
+    </ion-card-header>
+
+    <ion-item class="ion-padding-horizontal">
+      <ion-input id="titulo" [(ngModel)]="publicacion.titulo" label="Título" labelPlacement="floating"></ion-input>
+    </ion-item>
+
+    <ion-item class="ion-padding-horizontal">
+      <ion-textarea id="contenido" [(ngModel)]="publicacion.contenido" label="Contenido" labelPlacement="floating"></ion-textarea>
+    </ion-item>
+
+    <div class="alinear-centro">
+      <ion-button id="limpiar" class="botonduoc ion-auto" (click)="limpiarPublicacion()">Limpiar</ion-button>
+      <ion-button id="guardar" class="botonduoc ion-auto" (click)="guardarPublicacion()">Guardar</ion-button>
+    </div>
+
+  </ion-card>
+
+</div>
+  <!--FIN CREAR-->
+
+<!--PUBLICACIONES ANTERIORES-->
+<div style="display: flex; align-items: center; justify-content:center;">
+
+  <ion-card class="colorcard1 ion-text-center ion-padding-vertical">
+    <ion-card-title class="azul">Publicaciones recientes</ion-card-title>
+  
+  <ion-card *ngFor="let pub of publicaciones">
+
+    <ion-card-header>
+      <h4>
+        #{{ pub.id }}: {{ pub.titulo }} <br>
+        Autor: {{ pub.nombre }} {{ pub.apellido }}
+      </h4>
+    </ion-card-header>
+
+    <ion-card-content>
+      {{ pub.contenido }}
+    </ion-card-content>
+
+    <!--BOTONES-->
+    <div class="alinear-derecha">
+      <ion-button id="editar" class="botonduoc ion-auto" (click)="editarPublicacion(pub)">
+        Editar
+      </ion-button>
+
+      <ion-button id="eliminar" class="botonduoc ion-auto" (click)="eliminarPublicacion(pub)">
+        Eliminar
+      </ion-button>
+    </div>
+    <!--FIN BOTONES-->
+  </ion-card>
+<!--FIN PUBLICACIONES ANTERIORES-->
+</ion-card>
+</div>
+
+</ion-content>

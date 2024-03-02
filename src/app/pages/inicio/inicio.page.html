@@ -1,0 +1,64 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="headercolor">
+    <div #titulo class="centratit">
+      <ion-buttons slot="start">
+        <ion-img class="imglogo" src="assets/img/DuocUC.svg.png"></ion-img>
+      
+        <ion-title class="ion-text-center">
+          Sistema de Asistencia Duoc
+        </ion-title>
+      </ion-buttons>
+    </div>
+  </ion-toolbar>
+
+  <ion-toolbar >
+    <ion-segment class="segmento" [(ngModel)]="componente_actual"  (ngModelChange)="cambiarComponente($event)">
+      <ion-segment-button *ngIf="!esUsuarioAdmin" value="qr" class="titulo-seg">
+        <ion-label>
+          QR
+        </ion-label>
+      </ion-segment-button>
+
+      <ion-segment-button *ngIf="!esUsuarioAdmin" value="miclase" class="titulo-seg">
+        <ion-label>
+          Mi Clase
+        </ion-label>
+      </ion-segment-button>
+
+      <ion-segment-button id="foro" value="foro" class="titulo-seg">
+        <ion-label>
+          Foro
+        </ion-label>
+      </ion-segment-button>
+
+      <ion-segment-button value="misdatos" class="titulo-seg">
+        <ion-label>
+          Mis Datos
+        </ion-label>
+      </ion-segment-button>
+
+      <ion-segment-button *ngIf="esUsuarioAdmin"  value="admin" class="titulo-seg">
+        <ion-label>
+          ADMIN
+        </ion-label>
+      </ion-segment-button>
+      <!-- </ion-segment>-->
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <app-qr *ngIf="!esUsuarioAdmin" [hidden]="componente_actual !== 'qr'" (qrCapturado)="cambiarComponente('miclase')"></app-qr>
+  <app-miclase *ngIf="!esUsuarioAdmin" [hidden]="componente_actual !== 'miclase'"></app-miclase>
+  <app-foro id="foro" *ngIf="true" [hidden]="componente_actual !== 'foro'"></app-foro>
+  <app-misdatos *ngIf="true" [hidden]="componente_actual !== 'misdatos'"></app-misdatos>
+  <app-admin *ngIf="esUsuarioAdmin" [hidden]="componente_actual !== 'admin'"></app-admin>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-button id="cerrarSesion" class="botonduoc" (click)="cerrarSesion()" expand="block" fill="clear" shape="round">
+      Cerrar sesión
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>
