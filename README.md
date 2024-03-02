@@ -34,13 +34,13 @@ La aplicación proporciona las siguientes credenciales de acceso para diferentes
 
 **Estudiantes:**
 
-* atorres@duocuc.cl
+    * atorres@duocuc.cl
     * Contraseña: 1234
       
-* avalenzuela@duocuc.cl
+    * avalenzuela@duocuc.cl
     * Contraseña: qwer
       
-* cfuentes@duocuc.cl
+    * cfuentes@duocuc.cl
     * Contraseña: asdf
       
 **Administrador:**
