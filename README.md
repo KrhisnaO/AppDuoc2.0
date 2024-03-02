@@ -12,21 +12,21 @@ La aplicación se destaca por las siguientes características:
 
 Para iniciar el proyecto en tu entorno local, sigue estos sencillos pasos:
 1. Instalación de Dependencias: Ejecuta el siguiente comando para instalar los paquetes necesarios:
-   * npm install
+        * npm install
 
 3. Iniciar el Proyecto: Luego, inicia el proyecto con el comando:
   
-   * ionic serve
+        * ionic serve
    
 6. Activar JSON Server: En otra terminal, navega hasta la carpeta _JSON-SERVER y ejecuta el siguiente comando para activar el servidor JSON:
 
-   * cd _JSON-SERVER
+        * cd _JSON-SERVER
    
-   * npx json-server --watch publicaciones.json
+        * npx json-server --watch publicaciones.json
    
 8. Transferir a Dispositivo Móvil: Para desplegar la aplicación en un dispositivo Android, ejecuta:
   
-    * ionic capacitor run android
+        * ionic capacitor run android
    
 ### **Credenciales de Acceso**
 
