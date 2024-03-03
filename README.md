@@ -1,4 +1,4 @@
-# AppDuoc2.0
+# DuocApp
 Es una aplicación móvil híbrida diseñada para sistemas operativos Android. Desarrollada en el Instituto Duoc UC como parte del ramo de programación de aplicaciones móviles, esta aplicación aborda la problemática de la gestión de asistencias de los estudiantes universitarios, haciendo que este proceso sea más rapido.
 
 ### **Características principales**
