@@ -1,12 +1,12 @@
 # AppDuoc2.0
-Es una aplicación móvil híbrida diseñada para sistemas operativos Android que ofrece soluciones innovadoras en el ámbito de la asistencia estudiantil.
+Es una aplicación móvil híbrida diseñada para sistemas operativos Android. Desarrollada en el Instituto Duoc UC como parte del ramo de programación de aplicaciones móviles, esta aplicación aborda la problemática de la gestión de asistencias e inasistencias de los estudiantes universitarios.
 
 ### **Características principales**
 
 La aplicación se destaca por las siguientes características:
 * Gestión Integral de Asistencias: Ofrece una solución para el registro y seguimiento de asistencias de los estudiantes.
 * Interfaz Intuitiva: Diseñada con una interfaz de usuario intuitiva y amigable para facilitar su uso por parte de estudiantes y personal docente.
-* Tecnologías Utilizadas: Desarrollada con una combinación de tecnologías de vanguardia, que incluyen Angular, Ionic, Capacitor, TypeScript, SCCS, HTML, JavaScript y SQLite, garantizando un rendimiento óptimo y una experiencia de usuario fluida.
+* Skills: Angular, Ionic, Capacitor, TypeScript, SCCS, HTML, JavaScript y SQLite.
   
 ### **Instalación**
 
